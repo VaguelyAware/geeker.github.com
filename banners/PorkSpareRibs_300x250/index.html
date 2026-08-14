@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <meta name="ad.size" content="width=300,height=250" />
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.13_min.js"></script>
+<!-- 
+  <script>
+    var clickTag = "https://www.google.com";
+  </script>
+ -->
+</head>
+
+<body>
+  <div id="container">
+    <!-- BG -->
+    <div id="bg" class="adSize"></div>
+    <div id="bgrect" class="adSize"></div>
+    <div id="logo2" class="adSize"></div>
+
+    <div id="frame1" class="adSize">
+      <div id="mask1" class="adSize">
+        <div id="image1" class="image"></div>
+      </div>
+
+      <div id="rect1a" class="adSize rect"></div>
+      <div id="text1a" class="adSize"></div>
+      <div id="rect1b" class="adSize rect"></div>
+      <div id="text1b" class="adSize"></div>
+      <div id="mask2" class="adSize">
+        <div id="image2" class="image"></div>
+      </div>
+      <div id="logo1" class="adSize"></div>
+      <div id="rect2a" class="adSize rect"></div>
+      <div id="text2a" class="adSize"></div>
+      <div id="rect2b" class="adSize rect"></div>
+      <div id="text2b" class="adSize"></div>
+      <div id="tc1" class="adSize"></div>
+    </div>
+
+    <div id="frame2" class="adSize">
+      <div id="packshot" class="adSize"></div>
+      <div id="roundelContainer">
+        <div id="roundelOuterWhite"></div>
+        <div id="roundelInnerRed"></div>
+        <img src="roundCopy1.png" id="roundelCopy1" alt="" />
+        <img src="strip.png" id="strip" alt="" />
+      </div>
+      
+      <div id="dinkus1" class="adSize"></div>
+      <div id="dinkus2" class="adSize"></div>
+      <div id="text3" class="adSize">
+        <div id="text3a" class="adSize"></div>
+        <div id="text3b" class="adSize"></div>
+        <div id="text3c" class="adSize"></div>
+        <div id="text3d" class="adSize"></div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div id="cta">
+      <div id="btn_cta_redFill"></div>
+      <div id="label_wrap">
+        <img src="cta_out.svg" id="btn_cta_label" class="img_svg" alt="" />
+        <img src="cta_over.svg" id="btn_cta_label_hover" class="img_svg" alt="" />
+      </div>
+    </div>
+
+    <!-- Border -->
+    <div id="border" class="adSize btn"></div>
+
+    <!-- Clickthrough -->
+    <div id="bg_clickthrough" class="adSize buttonConfig"></div>
+  </div>
+
+  <!-- PRELOADER (safe + simple) -->
+  <script>
+    (function preloadImages() {
+      var files = [
+        "logo1.svg", "logo2.svg", "tc1.png", "image1.jpg", "image2.jpg",
+        "packshot.png", "text1a.png", "text1b.png", "text2a.png", "text2b.png",
+        "text3a.png", "text3b.png", "text3c.png", "text3d.png",
+        "cta_out.svg", "cta_over.svg", "dinkus1.png", "dinkus2.png",
+        "roundCopy1.png", "strip.png", "roundelInnerRed.svg", "roundelOuterWhite.svg"
+      ];
+
+      var images = [];
+      for (var i = 0; i < files.length; i++) {
+        images[i] = new Image();
+        images[i].src = files[i];
+      }
+      // console.log("<<<<< PRELOADED IMAGES =", files.length);
+    })();
+  </script>
+
+  <!-- JAVASCRIPT -->
+  <script src="animation.js"></script>
+</body>
+</html>
