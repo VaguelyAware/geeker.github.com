@@ -1,0 +1,183 @@
+@charset "utf-8";
+/* CSS Document */
+
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Montserrat-normal {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+body { margin:0 auto; padding:0; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-tap-highlight-color: transparent; }
+
+#container { width:300px; height:250px; overflow:hidden; top:0px; left:0; position:absolute; background-color:#fff; display:none; }
+
+/* Global */
+.adSize { position:absolute; top:0px; width:300px; height:250px; }
+.bgSize { position:absolute; top:0px; width:300px; height:250px; }
+.defPos { position:absolute; top:0px; left:0px; }
+.btn { cursor: pointer; }
+.hideElm { display:none; }
+.buttonConfig {background-color:#fff;cursor: pointer;opacity: 0;}
+.anchorCenter { -webkit-transform-origin: center center; transform-origin: center center; }
+.blendingMode { mix-blend-mode:hard-light; }
+.ctaConfig {top: 193px;left: 182px;width: 138px;height: 42px;/* background-color: aqua; *//* opacity: 0.5; */z-index: 1;border-radius: 20px;-moz-border-radius: 20px;-webkit-border-radius: 20px;-o-border-radius: 20px;}
+.egg {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+}
+.pack {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 500px;
+}
+
+/* Border */
+#border { box-sizing: border-box; border: 1px solid #808080; mix-blend-mode: multiply; opacity: 0.5}
+
+/*-- BG --*/
+#bg { background-color: #C81C72;}
+#mask{
+  position: absolute;
+  width: 300px;
+  height: 355px;
+  top:246px;
+  overflow: hidden;
+}
+
+#image{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 472px;          /* make it bigger if you want a slow zoom */
+  height: 262px;
+  transform: translate(-50%, -50%);  /* center it inside mask */
+  background: url(image.png) no-repeat center;
+  background-size: cover;
+  transform-origin: 50% 50%;
+  opacity:0;
+}
+
+#starburst { 
+  	left: 186px;
+  	top: -217px;
+  	width: 329px; 
+  	height: 329px; 
+	background: url(starburst.svg) no-repeat center; background-size: 100%;
+	transform-origin: 50% 50%;
+}
+#egg1 {
+  left: -10px;
+  top: -42px;
+  width: 111px;
+  height: 111px;
+  background-image: url(egg1.png);
+  transform: rotate(39deg);
+  transform-origin: 50% 50%;
+}
+
+#egg2 { 
+	left: 205px;
+	top: -17px;
+	width: 110px;
+	height: 110px;
+	background-image: url(egg2.png);
+	transform: rotate(-40deg);
+	transform-origin: 50% 50%;
+}
+#egg3 { 
+	left:40px;
+	top: 28px;
+	width: 99px;
+	height: 99px;
+	background-image: url(egg3.png);
+	transform: rotate(23deg);
+	transform-origin: 50% 50%;
+}
+
+#egg5 { 
+	left: 170px;
+	top: 108px;
+	width: 84px;
+	height: 84px;
+	background-image: url(egg5.png);
+	transform: rotate(-16deg);
+	transform-origin: 50% 50%;
+}
+#pack1 { 
+	left: 96px;
+	top: -77px;
+	width: 158px;
+	height: 263px;
+	background-image: url(Buns_Choc.png);
+	transform: rotate(-17deg);
+	transform-origin: 50% 50%;
+}
+#pack2 { 
+	left: 165px;
+	top: -18px;
+	width: 154px;
+	height: 256px;
+	background-image: url(Buns_Trad.png);
+	transform: rotate(20deg);
+	transform-origin: 50% 50%;
+}
+
+#text1a { background: url(text1a.png) no-repeat; background-size: 100%; }
+#text1b { background: url(text1b.png) no-repeat; background-size: 100%; }
+#text2a { background: url(text2a.png) no-repeat; background-size: 100%; }
+#text2b { background: url(text2b.png) no-repeat; background-size: 100%; }
+#text2c { background: url(text2c.png) no-repeat; background-size: 100%; }
+#text2d { background: url(text2d.png) no-repeat; background-size: 100%; }
+#tc { background: url(tc.png) no-repeat; background-size: 100%; }
+
+/*-- ELEMENTS --*/
+#logo { background: url(logo.svg) no-repeat; background-size: 100%; }
+ 
+/* CTA */
+#cta {position: absolute;top: 182px;left: 193px;width: 32px;height: 25px;background: #fff;border: 1px solid #fff;border-radius: 30px;transform-origin: 50% 50%;overflow: hidden;}
+#btn_cta_label, #btn_cta_label_hover {position: absolute;top: 8px;left: 16px;width: 52px;height: 10px;}
+#btn_cta_label_hover { opacity: 0; }
+#label_wrap {position: absolute;top: 0;left: 0;width: 131px;height: 33px;overflow: hidden;}
+#btn_cta_redFill {position: relative;bottom: -36px;right: 0;width: 152px;height: 33px;background: #e01a22;}
+
+
+/* ROUNDEL 
+#roundelContainer  {
+    position: absolute;
+    top: 30px;
+    left: 257px;
+    width: 155px;
+    height: 155px;
+}
+
+#roundelOuterWhite { background: url(roundelOuterWhite.png) no-repeat; background-size: 100%; }
+#roundelInnerRed { background: url(roundelInnerRed.png) no-repeat; background-size: 100%; }
+#roundelCopy1 {position: absolute;top: -30px;left: -30px;width: 227px;height: 227px;}
+.roundelContainer {position:absolute;top: -30px;left: -30px;width: 227px;height: 227px;overflow: hidden;}
+
+#shimmer1,#shimmer2 { background: url(shimmer.png) no-repeat; background-size: 100%; }
+
+ .mask1{
+    -webkit-mask-image: url(mask1.png);
+    mask-image: url(mask1.png);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+}
+*/

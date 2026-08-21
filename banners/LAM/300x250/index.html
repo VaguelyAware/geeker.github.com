@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <meta name="ad.size" content="width=300,height=250" />
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.13_min.js"></script>
+  <script>
+    var clickTag = "https://www.google.com";
+  </script>
+</head>
+
+<body>
+  <div id="container">
+    <!-- BG -->
+    <div id="bg" class="adSize"></div>
+    <div id="bgrect" class="adSize"></div>
+
+      <div id="mask" class="adSize">
+        <div id="image1" class="image"></div>
+      </div>
+            
+      <div id="logo" class="adSize"></div>
+
+    <div id="frame1" class="adSize">
+      <div id="mask" class="adSize">
+        <div id="image2" class="image"></div>
+        <div id="callout1" class="adSize"></div>
+
+        <div id="image3" class="image"></div>
+        <div id="callout2" class="adSize"></div>
+      </div>
+      <div id="text1a" class="adSize"></div>
+      <div id="text1b" class="adSize"></div>
+    </div>
+      <div id="roundelContainer">
+        <div id="roundelOuterWhite"></div>
+        <div id="roundelInner"></div>
+        <div id="roundelCopy1"></div>
+      </div>
+
+      <div id="text2a" class="adSize"></div>
+
+    <!-- CTA -->
+    <div id="cta">
+      <div id="btn_cta_redFill"></div>
+      <div id="label_wrap">
+        <img src="cta_out.png" id="btn_cta_label" class="img_svg" alt="" />
+        <img src="cta_over.png" id="btn_cta_label_hover" class="img_svg" alt="" />
+      </div>
+    </div>
+
+    <!-- Border -->
+    <div id="border" class="adSize btn"></div>
+
+    <!-- Clickthrough -->
+    <div id="bg_clickthrough" class="adSize buttonConfig"></div>
+  </div>
+
+  <!-- PRELOADER (safe + simple) -->
+  <script>
+    (function preloadImages() {
+      var files = [
+        "logo.svg", "image1.jpg", "image2.jpg", "image3.jpg", "callout1.svg", "callout2.svg",
+        "text1a.png", "text1b.png", "text2a.png",
+        "cta_out.png", "cta_over.png",
+        "roundCopy1.svg", "roundelInner.svg", "roundelOuterWhite.svg"
+      ];
+
+      var images = [];
+      for (var i = 0; i < files.length; i++) {
+        images[i] = new Image();
+        images[i].src = files[i];
+      }
+      // console.log("<<<<< PRELOADED IMAGES =", files.length);
+    })();
+  </script>
+
+  <!-- JAVASCRIPT -->
+  <script src="animation.js"></script>
+</body>
+</html>

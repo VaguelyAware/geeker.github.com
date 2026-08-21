@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="ad.size" content="width=300,height=250">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.9.1_min.js"></script>
+    <script type="text/javascript">
+        var clickTag = "https://www.google.com";
+    </script>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <!-- BG -->
+        <div id="bg" class="adSize"></div>
+	    	
+
+        <div id="frame1" class="adSize">
+  	    <div id="starburst" class="adSize"></div>
+      	<div id="mask" class="adSize">
+ 			</div>
+            <div id="text1" class="adSize">
+                <div id="text1a" class="adSize"></div>
+                <div id="text1b" class="adSize"></div>
+
+            </div>
+        </div>
+			<div id="egg1" class="egg"></div>
+			<div id="egg2" class="egg"></div>
+			<div id="egg3" class="egg"></div>
+			<div id="egg5" class="egg"></div>
+ 			<div id="image" class="image"></div>
+            <div id="tc" class="adSize"></div>
+
+        <div id="frame2" class="adSize">
+            <div id="text2" class="adSize">
+                <div id="text2a" class="adSize"></div>
+                <div id="text2b" class="adSize"></div>
+                <div id="text2c" class="adSize"></div>
+                <div id="text2d" class="adSize"></div>
+                <div id="pack1" class="pack"></div>
+                <div id="pack2" class="pack"></div>
+
+            </div>
+        </div>
+        
+        
+        <!-- CTA -->
+        <div id="cta">
+            <div id="btn_cta_redFill"></div>
+            <div id="label_wrap">
+                <img src="cta_out.png" id="btn_cta_label" class="img_svg" />
+                <img src="cta_over.png" id="btn_cta_label_hover" class="img_svg" />
+            </div>
+        </div>
+
+        <!-- Logo -->
+        	<div id="logo" class="adSize"></div>
+        	
+        <!-- Border -->
+        <div id="border" class="adSize btn"></div>
+
+        <!-- Clickthrough -->
+        <div id="bg_clickthrough" class="adSize buttonConfig"></div>
+    </div>
+
+
+    <!-- PRELOADER -->
+    <div class="hidden">
+        <script type="text/javascript">
+            var images = new Array()
+
+            function preload() {
+                for (i = 0; i < preload.arguments.length; i++) {
+                    images[i] = new Image()
+                    images[i].src = preload.arguments[i]
+                }
+                console.log("<<<<< PRELOADED IMAGES =", i);
+            }
+            preload(
+                "logo.svg", "tc.png", "image.png", "starburst.svg",
+                "text1a.png", "text1b.png",
+                "text2a.png", "text2b.png", "text2c.png", "text2d.png",
+                "cta_out.png", "cta_over.png", "Buns_Choc.png", "Buns_Trad.png",
+                "egg1.png", "egg2.png", "egg3.png", "egg4.png", "egg5.png"
+            )
+        </script>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="animation.js"></script>
+
+</body>
+
+</html>

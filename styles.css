@@ -490,6 +490,8 @@ a {
   padding: 88px 0;
   background: var(--black);
   color: var(--white);
+  margin-bottom: 56px;
+
 }
 
 .results-grid {
@@ -586,4 +588,115 @@ a {
     padding: 30px 0;
   }
 
+}
+
+/* =========================================================
+   HTML5 banner showcase
+========================================================= */
+
+.banner-showcase {
+  padding: 88px 0;
+}
+
+.banner-showcase__header {
+  max-width: 760px;
+  margin-bottom: 48px;
+}
+
+.banner-showcase__header h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.banner-showcase__header p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.banner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  justify-items: center;
+  gap: 32px;
+  padding-top:20px;
+}
+
+.banner-frame {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-inline: auto;
+  
+}
+
+.banner-frame iframe {
+  display: block;
+  width: var(--banner-width);
+  height: var(--banner-height);
+  border: 0;
+  transform-origin: top left;
+  transform: scale(var(--banner-scale));
+  pointer-events: none;
+}
+
+/* The first two banners sit naturally in their columns */
+.banner-frame--portrait {
+  width: var(--display-width);
+  height: var(--display-height);
+}
+
+.banner-frame--landscape {
+  height: var(--display-height);
+  width: var(--display-width);
+  align-self: end;
+}
+
+
+/* Leaderboard */
+.banner-frame--wide {
+  grid-column: 1 / -1;
+  width: var(--display-width);
+  height: var(--display-height);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .banner-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .banner-frame--wide {
+    grid-column: auto;
+  }
+
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.media-grid video,
+.case-study__hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.media-grid--square video {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .media-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 }
