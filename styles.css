@@ -526,11 +526,24 @@ a {
   padding: 40px 0 88px;
 }
 
-.case-study-media img {
+.case-study-media img,
+.case-study-media video {
   width: 100%;
   height: auto;
+  max-width: 100%;
+  display: block;
+}
+/* Case study two-up media */
+
+.case-study-media .media-grid {
+  align-items: start;
 }
 
+.case-study-media .media-grid video {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
 
 /* Takeaway */
 
